@@ -9,6 +9,6 @@ h1 {
     font-family: "solid", sans-serif;
     color: yellow;
     font-style: italic;
-    -webkit-text-stroke: .1rem blue;
+    -webkit-text-stroke: .1rem rgb(53, 0, 244);
     font-size: 3rem;
 }

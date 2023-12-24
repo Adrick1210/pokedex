@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include("./partials/head.ejs") %>
-  </head>
+  <%- include("./partials/head.ejs") %>
   <body>
     <h1>Choose that Pokémon</h1>
 
     <div class="poke-container">
       <ul class="poke-list">
         <%for (let i = 0; i < pokemon.length; i++) { %>
-        <a href="/pokedex/<%= i %>"
+        <a href="/<%= i %>"
           ><img src="<%= pokemon[i].img %>" alt="<%= pokemon[i].name %>"
         /></a>
         <% } %>
