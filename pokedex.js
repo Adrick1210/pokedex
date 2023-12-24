@@ -6,12 +6,13 @@ const Pokemon = require("./models/pokemon");
 
 // MIDDLE WARE
 app.use(morgan("dev"));
+app.use(express.static("public"))
 
 // ROUTES
 
 // Index
 app.get("/", (req, res) => {
- res.send("Who's that pokemon?")
+ res.render("index.ejs")
 })
 // New
 

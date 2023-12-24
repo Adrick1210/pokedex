@@ -1,0 +1,14 @@
+/* font family */
+@font-face {
+    font-family: "solid";
+    src: url("./fonts/Solid.ttf");
+}
+
+/* Header */
+h1 {
+    font-family: "solid", sans-serif;
+    color: yellow;
+    font-style: italic;
+    -webkit-text-stroke: .1rem blue;
+    font-size: 3rem;
+}
