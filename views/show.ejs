@@ -2,17 +2,34 @@
 <html lang="en">
   <%- include("./partials/head.ejs") %>
   <body>
+    <div class="show-head">
+      <h1 class="show-h1"><%= pokemon.name %></h1>
     <%- include("./partials/nav.ejs") %>
-    <h1><%= pokemon.name %></h1>
+  </div>
     <div class="poke-data">
+      <h1 class="data-h1"> <%= pokemon.name %></h1>
       <div class="poke-image">
         <img src="<%= pokemon.img %>" alt="<%= pokemon.name %>" />
+      </div>
+      <div class="id">
+        <h2>ID: #<%= pokemon.id %></h2>
       </div>
       <div class="poke-type">
         <h1>Types:</h1>
         <% for(let i = 0; i < pokemon.type.length; i++) { %>
         <li><%= pokemon.type[i] %></li>
         <% } %>
+      </div>
+      <div class="poke-stats">
+        <h1>Stats:</h1>
+        <ul>
+          <li>HP: <%= pokemon.stats.hp %></li>
+          <li>Attack: <%= pokemon.stats.attack %></li>
+          <li>Defense: <%= pokemon.stats.defense %></li>
+          <li>Special Attack: <%= pokemon.stats.spattack %></li>
+          <li>Special Defense: <%= pokemon.stats.spdefense %></li>
+          <li>Speed: <%= pokemon.stats.speed %></li>
+        </ul>
       </div>
     </div>
   </body>
