@@ -2,12 +2,18 @@
 <html lang="en">
   <%- include("./partials/head.ejs") %>
   <body>
+    <%- include("./partials/nav.ejs") %>
     <h1><%= pokemon.name %></h1>
     <div class="poke-data">
       <div class="poke-image">
         <img src="<%= pokemon.img %>" alt="<%= pokemon.name %>" />
       </div>
-      
+      <div class="poke-type">
+        <h1>Types:</h1>
+        <% for(let i = 0; i < pokemon.type.length; i++) { %>
+        <li><%= pokemon.type[i] %></li>
+        <% } %>
+      </div>
     </div>
   </body>
 </html>

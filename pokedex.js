@@ -29,6 +29,10 @@ app.get("/", (req, res) => {
 app.get("/:id", (req, res) => {
   const id = req.params.id;
   const pokemon = Pokemon[id];
+  if (!pokemon) {
+    res.status(404).send('Pokemon not found');
+    return;
+  }
   res.render("show.ejs", { pokemon, id });
 });
 
