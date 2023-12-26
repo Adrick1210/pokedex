@@ -11,6 +11,11 @@ body {
   margin-bottom: 80px;
 }
 
+li {
+  list-style: none;
+  font-size: 35px;
+}
+
 /* Header */
 .dex-head {
   font-family: "solid", sans-serif;
@@ -25,21 +30,57 @@ body {
 /* Index page styles */
 
 .poke-container {
-    margin-left: 110px;
-    margin-right: 110px;
+  margin-left: 110px;
+  margin-right: 110px;
 }
 
 .poke-list {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
 }
 
 .poke-img {
-    height: 500px;
-    width: 500px;
-    border-radius: 25px;
-    box-shadow: 20px 10px 10px rgb(90, 76, 76);
+  height: 500px;
+  width: 500px;
+  border-radius: 25px;
+  box-shadow: 20px 10px 10px rgb(90, 76, 76);
+}
+
+/* show page styles */
+.poke-data {
+  text-align: center;
+  margin-top: 550px;
+}
+
+.data-h1 {
+  font-size: 80px;
+}
+
+.poke-image img {
+  height: 600px;
+  width: 600px;
+  border-radius: 25px;
+  box-shadow: 20px 10px 10px rgb(90, 76, 76);
+}
+
+.id h2 {
+    font-size: 50px;
+}
+
+.poke-type h1 {
+    font-size: 50px;
+}
+
+.poke-stats h1 {
+    font-size: 50px;
+}
+
+/* return to index */
+
+.nav {
+    border: 1px solid black;
+    
 }
