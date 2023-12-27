@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include("./partials/head.ejs") %>
-<body>
-    <div class="nav-new">
-        <%- include("./partials/nav.ejs") %>
-    </div>
-</body>
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <div class="nav-new"><%- include("./partials/nav.ejs") %></div>
+    <form action="/" method="POST" id="poke-add">
+      <fieldset>
+        <label for="pokemon">Pokémon:</label>
+        <input type="text" name="pokemon" id="pokemon" /> <br />
+
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id" /> <br />
+
+        <label for="image">Image:</label>
+        <input type="url" name="image" id="image" /> <br />
+
+        <input type="submit" value="Add Pokemon" id="add" />
+      </fieldset>
+    </form>
+  </body>
 </html>
