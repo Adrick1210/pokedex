@@ -170,3 +170,13 @@ label {
   color: white;
   background-color: black;
 }
+
+/* edit/delete buttons */
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: space-between;
+  margin-top: 0;
+}
