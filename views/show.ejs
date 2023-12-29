@@ -11,25 +11,6 @@
       <div class="id">
         <h2>ID: #<%= pokemon.id %></h2>
       </div>
-      <div class="poke-type">
-        <h1>Types:</h1>
-        <ul class="type">
-          <% for(let i = 0; i < pokemon.type.length; i++) { %>
-          <li><%= pokemon.type[i] %></li>
-          <% } %>
-        </ul>
-      </div>
-      <div class="poke-stats">
-        <h1>Stats:</h1>
-        <ul class="stat">
-          <li>HP: <%= pokemon.stats.hp %></li>
-          <li>Attack: <%= pokemon.stats.attack %></li>
-          <li>Defense: <%= pokemon.stats.defense %></li>
-          <li>Special Attack: <%= pokemon.stats.spattack %></li>
-          <li>Special Defense: <%= pokemon.stats.spdefense %></li>
-          <li>Speed: <%= pokemon.stats.speed %></li>
-        </ul>
-      </div>
     </div>
   </body>
 </html>

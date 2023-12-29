@@ -3,14 +3,14 @@
   <%- include("./partials/head.ejs") %>
   <body>
     <div class="add">
-      <a href="/new" class="add-link">Add</a>
+      <a href="/pokemon/new" class="add-link">Add</a>
     </div>
     <h1 class="dex-head">Choose that Pokémon!</h1>
 
     <div class="poke-container">
       <ul class="poke-list">
         <%for (let i = 0; i < pokemon.length; i++) { %>
-        <a href="/<%= i %>"
+        <a href="/pokemon/<%= i %>"
           ><img
             src="<%= pokemon[i].img %>"
             alt="<%= pokemon[i].name %>"

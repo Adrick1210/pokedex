@@ -3,19 +3,19 @@
   <%- include("./partials/head.ejs") %>
   <body>
     <div class="nav-new"><%- include("./partials/nav.ejs") %></div>
-    <form action="/" method="POST" id="poke-add">
-      <fieldset>
-        <label for="pokemon">Pokémon:</label>
-        <input type="text" name="pokemon" id="pokemon" /> <br />
+    <form action="/pokemon" method="post" id="poke-add">
+      
+        <label>ID:<input type="text" name="id" /></label>
+        <br />
 
-        <label for="id">ID:</label>
-        <input type="text" name="id" id="id" /> <br />
+        <label>Pokémon:<input type="text" name="name" /></label>
+        <br />
 
-        <label for="image">Image:</label>
-        <input type="url" name="image" id="image" /> <br />
+        <label>Image:<input type="text" name="img" /></label>
+        <br />
 
         <input type="submit" value="Add Pokemon" id="add" />
-      </fieldset>
+     
     </form>
   </body>
 </html>

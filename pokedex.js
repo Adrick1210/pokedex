@@ -7,35 +7,37 @@ const Pokemon = require("./models/pokemon");
 // MIDDLE WARE
 app.use(morgan("dev"));
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
 
 // ROUTES
 
 // Index
-app.get("/", (req, res) => {
+app.get("/pokemon", (req, res) => {
   res.render("index.ejs", { data: Pokemon });
 });
 
 // New
-app.get("/new", (req, res) => {
+app.get("/pokemon/new", (req, res) => {
   res.render("new.ejs");
 });
 
-// Edit
-
 // Create
+app.post("/pokemon", (req, res) => {
+  const body = req.body;
+  Pokemon.push(body);
+  res.redirect("/pokemon");
+});
+
+// Edit
 
 // Update
 
 // Destroy
 
 // Show
-app.get("/:id", (req, res) => {
+app.get("/pokemon/:id", (req, res) => {
   const id = req.params.id;
   const pokemon = Pokemon[id];
-  if (!pokemon) {
-    res.status(404).send("Pokemon not found");
-    return;
-  }
   res.render("show.ejs", { pokemon, id });
 });
 
