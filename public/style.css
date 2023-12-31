@@ -173,3 +173,42 @@ label {
   color: white;
   background-color: black;
 }
+
+/* web screen styles */
+
+@media only screen and (min-width: 1000px){
+  body {
+    background-size: cover;
+  }
+  .add {
+    position: sticky;
+    margin-right: 40px;
+    top: 45px;
+  }
+  .header {
+    margin-top: 260px;
+    font-size: 3rem;
+  }
+  .poke-container {
+    width: 50%;
+  }
+  .poke-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .buttons {
+    top: 160px;
+    right: 325px;
+    gap: 5px;
+  }
+  .button {
+    font-size: 1rem;
+    height: 50px;
+    width: 90px;
+  }
+  .poke-img {
+    height: 250px;
+    width: 250px;
+  }
+}
