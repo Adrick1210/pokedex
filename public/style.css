@@ -16,12 +16,12 @@ li {
   font-size: 35px;
 }
 
-/* Header */
-.dex-head {
+/* Headers */
+.header {
   font-family: "solid", sans-serif;
   color: yellow;
   font-style: italic;
-  -webkit-text-stroke: 0.2rem rgb(53, 0, 244);
+  -webkit-text-stroke: 0.2rem rgb(50, 17, 168);
   font-size: 5rem;
   text-align: center;
   margin-top: 480px;
@@ -95,7 +95,7 @@ li {
   font-size: 50px;
 }
 
-/* return to index */
+/* return to index nav */
 
 .nav {
   border-radius: 20px;
@@ -115,45 +115,22 @@ li {
   color: white;
 }
 
-.nav-new {
-  border-radius: 20px;
-  width: 30%;
-  position: sticky;
-  left: 700px;
-  margin-top: 400px;
-  padding: 15px;
-  text-align: center;
-  background-color: black;
-}
-
-.nav-new a {
-  font-size: 65px;
-  font-style: italic;
-  text-decoration: none;
-  color: white;
-}
-
 /* new page */
 #poke-add {
   height: 500px;
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-}
-fieldset {
-  padding: 15px;
-  align-items: center;
-  border: none;
 }
 
 input {
   height: 75px;
-  width: 100%;
+  width: 95%;
   border-radius: 20px;
   border: none;
   margin-top: 10px;
+  margin-left: 20px;
   font-size: 55px;
 }
 
@@ -163,10 +140,11 @@ label {
 }
 
 #add {
-  font-size: 2rem;
-  width: 30%;
-  margin-left: 325px;
+  font-size: 4rem;
+  margin-left: 180px;
   margin-top: 50px;
+  height: 400px;
+  width: 600px;
   color: white;
   background-color: black;
 }
@@ -179,4 +157,12 @@ label {
   gap: 80px;
   justify-content: space-between;
   margin-top: 0;
+}
+
+/* edit page */
+
+#edit {
+  margin-top: 80px;
+  color: white;
+  background-color: black;
 }

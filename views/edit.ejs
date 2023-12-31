@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <div class="nav n-edit"><%- include("./partials/nav.ejs") %></div>
+    <h1 class="header">Edit that <%= pokemon.name %>!</h1>
+    <form action="/pokemon/<%= id %>?_method=PUT" method="post">
+      <label>
+        Name: <input type="text" name="name" value="<%= pokemon.name %>"
+      /></label>
+      <label>
+        ID: <input type="text" name="id" value="<%= pokemon.id %>"
+      /></label>
+      <label>
+        Image: <input type="text" name="img" value="<%= pokemon.img %>"
+      /></label>
+      <input type="submit" value="Update <%= pokemon.name %>" id="edit"/>
+    </form>
+  </body>
+</html>
