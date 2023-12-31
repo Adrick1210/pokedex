@@ -154,9 +154,16 @@ label {
 .buttons {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 40px;
   justify-content: space-between;
-  margin-top: 0;
+  position: relative;
+  top: -70px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
 
 /* edit page */
