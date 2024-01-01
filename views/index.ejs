@@ -10,20 +10,24 @@
     <div class="poke-container">
       <ul class="poke-list">
         <%for (let i = 0; i < pokemon.length; i++) { %>
-        <a href="/pokemon/<%= i %>"
-          ><img
-            src="<%= pokemon[i].img %>"
-            alt="<%= pokemon[i].name %>"
-            class="poke-img"
-        /></a>
-        <div class="buttons">
-          <a href="/pokemon/<%= i %>/edit">
-            <input type="submit" value="Edit" class="button">
+        <div class="poke-item">
+          <a href="/pokemon/<%= i %>">
+            <img
+              src="<%= pokemon[i].img %>"
+              alt="<%= pokemon[i].name %>"
+              class="poke-img"
+            />
+            <div class="buttons">
+              <a href="/pokemon/<%= i %>/edit">
+                <input type="submit" value="Edit" class="button" />
+              </a>
+              <form action="/pokemon/<%= i %>/?_method=DELETE" method="post">
+                <input type="submit" value="Delete" class="button" />
+              </form>
+            </div>
           </a>
-          <form action="/pokemon/<%= i %>/?_method=DELETE" method="post">
-          <input type="submit" value="Delete" class="button">
-          </form>
         </div>
+
         <% } %>
       </ul>
     </div>

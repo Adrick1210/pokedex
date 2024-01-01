@@ -46,9 +46,8 @@ li {
 }
 
 .poke-container {
-  margin-top: 30px;
-  margin-left: 110px;
-  margin-right: 110px;
+  margin: 30px auto;
+  z-index: 2;
 }
 
 .poke-list {
@@ -154,10 +153,7 @@ label {
 .buttons {
   display: flex;
   flex-direction: row;
-  gap: 40px;
   justify-content: space-between;
-  position: relative;
-  top: -70px;
 }
 
 .button {
@@ -184,21 +180,28 @@ label {
     position: sticky;
     margin-right: 40px;
     top: 45px;
+    z-index: 1;
   }
   .header {
     margin-top: 260px;
     font-size: 3rem;
   }
-  .poke-container {
-    width: 50%;
-  }
   .poke-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 2px;
+    justify-content: center;
+    z-index: 2;
+  }
+  .poke-item {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    z-index: 3;
   }
   .buttons {
-    top: 160px;
+    top: 20px;
     right: 325px;
     gap: 5px;
   }
@@ -210,5 +213,22 @@ label {
   .poke-img {
     height: 250px;
     width: 250px;
+  }
+  .add {
+    left: 1000px;
+    top:80px;
+  }
+  .n-new {
+    left: 1000px;
+    top: 80px;
+    z-index: 5;
+  }
+  .n-edit {
+    top: 80px;
+    left: 1000px;
+    z-index: 5;
+  }
+  #add {
+    margin-left: 550px;
   }
 }
